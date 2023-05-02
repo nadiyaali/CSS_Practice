@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+}
+
+#container {
+    background-color: teal;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid teal;
+    /* This turns on flexbox for this webpage */
+    /* Flexbox has two axis, main axis: left to right and cross axis: from top to bottom */
+    display:flex;
+    /* flex-direction can be : row, row-reverse, column, column-reverse */
+    flex-direction:row;
+    /* justify-content works along the MAIN Axis */
+    /* justify-content can be flex-start,flex-end,center */
+    /* if you want spacing too, use space-between, space-around, space-evenly*/
+    /* is along the main axis */
+    justify-content:space-evenly;
+    /* flex-wrapcan be wrap,wrap-reverse, nowrap */
+    /* flex-wrap-wrap-reverse changes the cross axis,instead of top to bottom, its bottom to top */
+    flex-wrap:wrap;
+    /* Align items works along the CROSSaxis */
+    /* By default: main axis is left to right and cross axis is top to bottom, flex-start will align items
+    to the top of the cross axis and from left to right */
+    /* flex-end will align to the bottom of the x-axis, from left to right */
+    /* To put items in center, use both cross axis and main axis, align-items:center, justify-content-center*/
+    /* Align-items:baseline aligns the item by content, like drawing a line through the letters at the base  */
+   align-items:baseline;
+
+    /*  align-content only works when flex-wrap: wrap or wrap-reverse*/
+    align-content:space-around;
+
+
+    /* *********************************************************** */
+    /* align-self:    worksfor only one item, to change its cross axis  */
+}
+
+#container div{
+    height:200px;
+    width:400px;
+    font-size:4em;
+    text-align: center;
+    
+}

@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+}
+
+#container {
+    background-color:silver;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid silver;
+    display:flex;
+    flex-direction:row;
+    /* flex-wrap: wrap; */
+}
+
+#container div{
+    height:400px;
+    width:400px;
+    font-size:4em;
+    text-align: center;
+    /* Applies to the main axis. it is the initial size of an element */
+    /* it changes the width if flex-direction:row */
+    flex-basis: 400px;
+
+}
+
+div:nth-of-type(1){
+    /* flex-grow: 1; */
+    flex-shrink: 2;
+}
+
+div:nth-of-type(5){
+    /* flex-grow: 2; */
+   
+}
